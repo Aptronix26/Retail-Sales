@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>Retail Operations OS Enterprise v2.4.4.6 — Admin Login Hardened</title><style>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>Retail Operations OS Enterprise v2.4.4.7 — Full Credential Audit Hardened</title><style>
 :root{--bg:#f3f6fb;--card:#fff;--ink:#101828;--muted:#667085;--line:#e4e7ec;--navy:#0b1f3a;--blue:#2563eb;--green:#16a34a;--amber:#d97706;--red:#dc2626;--softblue:#eff6ff;--softgreen:#ecfdf5;--softamber:#fffbeb;--softred:#fef2f2}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);font-size:14px}.app{display:grid;grid-template-columns:268px 1fr;min-height:100vh}.sidebar{background:#071a31;color:#fff;padding:22px 18px;position:sticky;top:0;height:100vh;overflow:auto}.logo{font-size:22px;font-weight:900;letter-spacing:-.03em;margin-bottom:4px}.logo span{color:#77aaff}.sublogo{font-size:12px;color:#a9b8d0;margin-bottom:24px;line-height:1.4}.navitem{display:flex;gap:10px;align-items:center;padding:11px 12px;border-radius:14px;color:#d6e3f7;text-decoration:none;font-size:13px;font-weight:700;margin:4px 0}.navitem.active,.navitem:hover{background:#123963;color:#fff}.sidebox{margin-top:24px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);border-radius:16px;padding:14px}.main{padding:22px;overflow:auto}.topbar{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:18px}.title h1{margin:0;font-size:28px;color:var(--navy);letter-spacing:-.04em}.title p{margin:5px 0 0;color:var(--muted);font-size:14px}.controls{display:grid;grid-template-columns:120px 170px 150px 230px;gap:10px;align-items:end}.field label{display:block;font-size:11px;color:var(--muted);font-weight:800;margin:0 0 5px;text-transform:uppercase;letter-spacing:.04em}select,input{border:1px solid var(--line);border-radius:12px;background:#fff;padding:9px 11px;font-size:13px;min-height:38px;width:100%}button{border:0;border-radius:12px;padding:10px 14px;background:var(--blue);color:#fff;font-weight:800;cursor:pointer}button.light{background:#fff;color:var(--navy);border:1px solid var(--line)}.grid{display:grid;gap:16px}.kpis{grid-template-columns:repeat(5,1fr);margin-bottom:16px}.two{grid-template-columns:1fr 1fr}.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 12px 30px rgba(16,24,40,.06)}.card h2{font-size:18px;color:var(--navy);margin:0 0 14px}.card h3{font-size:12px;color:var(--muted);margin:0 0 8px;text-transform:uppercase;letter-spacing:.04em}.metric{font-size:28px;font-weight:900;color:var(--navy);letter-spacing:-.04em}.mini{font-size:12px;color:var(--muted);line-height:1.45}.tag{display:inline-block;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900}.green{background:var(--softgreen);color:var(--green)}.amber{background:var(--softamber);color:var(--amber)}.blue{background:var(--softblue);color:var(--blue)}.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:16px;margin-bottom:16px}.missionPanel{background:#071a31;color:#fff;border-radius:22px;padding:22px;display:grid;grid-template-columns:1fr 1fr;gap:18px;min-height:230px}.missionPanel h2{color:#fff;margin:0 0 10px}.bigNum{font-size:44px;font-weight:900;letter-spacing:-.06em}.missionTiles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;align-self:end}.missionTile{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:15px;padding:12px}.missionTile span{display:block;color:#cbd5e1;font-size:12px}.missionTile b{display:block;margin-top:4px;font-size:18px}.table{width:100%;border-collapse:collapse}.table th,.table td{border-bottom:1px solid var(--line);padding:10px;text-align:left;font-size:13px;vertical-align:top}.table th{font-size:12px;color:var(--muted);background:#fafafa;text-transform:uppercase}.ai{background:linear-gradient(135deg,#fff,#f4f7ff);border-left:5px solid var(--blue);line-height:1.55;font-size:14px}.ai ul{margin:0;padding-left:18px}.ai li{margin:10px 0}.action{display:flex;justify-content:space-between;gap:10px;align-items:center;background:#f8fafc;border:1px solid var(--line);border-radius:16px;padding:12px;margin:9px 0}.formgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.field input,.field select{background:#fffaf0}.section{margin-top:16px}.peopleGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.person{border:1px solid var(--line);border-radius:16px;padding:14px;background:#fff}.person b{display:block;color:var(--navy)}.person .mission{font-size:12px;color:var(--muted);margin-top:7px;line-height:1.45}.gptbox{display:grid;grid-template-columns:220px 1fr auto;gap:10px;margin-top:12px}.answer{background:#071a31;color:#eaf2ff;border-radius:18px;padding:16px;line-height:1.55;font-size:14px;margin-top:12px}.rhythm{display:grid;gap:10px}.rhythmStep{display:flex;justify-content:space-between;gap:12px;align-items:center;border:1px solid var(--line);background:#fff;border-radius:16px;padding:13px}.tableWrap{max-height:320px;overflow:auto;border:1px solid var(--line);border-radius:16px}@media(max-width:1100px){.app{grid-template-columns:1fr}.sidebar{height:auto;position:relative}.kpis,.hero,.two,.formgrid,.peopleGrid,.controls,.missionPanel,.missionTiles,.gptbox{grid-template-columns:1fr}}
 
@@ -1185,7 +1185,7 @@ document.addEventListener('DOMContentLoaded',()=>setTimeout(()=>{loadAchievement
 <div class="loginScreen" id="loginScreen">
 <div class="loginCard">
 <div class="loginBrand">Retail Ops <span>OS</span></div>
-<div class="loginSub">Enterprise v2.4.3 · Secure Role-Based Access</div>
+<div class="loginSub">Enterprise v2.4.4.7 · Secure Role-Based Access</div>
 <div class="loginTitle">Sign in with Employee ID</div>
 <div class="loginGrid">
 <label>Employee / Staff ID</label>
@@ -1201,7 +1201,7 @@ document.addEventListener('DOMContentLoaded',()=>setTimeout(()=>{loadAchievement
     </div>
 </div>
 </div>
-<div class="app"><aside class="sidebar"><div class="logo">Retail Ops <span>OS</span></div><div class="sublogo">Enterprise v2.4.4.5<br/>Daily Sales Rigour</div><a class="navitem active" data-page="dashboard" href="#dashboard">🏠 Dashboard</a><a class="navitem" data-page="input" href="#input">✍️ Target &amp; Achievement</a><a class="navitem" data-page="mission" href="#mission">🎯 Today's Mission</a><a class="navitem" data-page="trajectory" href="#trajectory">📈 Weekly Trajectory</a><a class="navitem" data-page="gpt" href="#gpt">💬 Retail GPT</a><a class="navitem adminNav" data-page="admin" href="#admin">⚙ Admin Console</a><a class="navitem" data-page="rhythm" href="#rhythm">🗓 Operating Rhythm</a><div class="sidebox"><b id="missionStatus">Mission Ready</b><span id="sideScope">RM → ARM → City → Store</span><br/><br/><span>Last updated: <b id="lastUpdated" style="color:#fff;display:inline">--</b></span></div></aside>
+<div class="app"><aside class="sidebar"><div class="logo">Retail Ops <span>OS</span></div><div class="sublogo">Enterprise v2.4.4.7<br/>Daily Sales Rigour</div><a class="navitem active" data-page="dashboard" href="#dashboard">🏠 Dashboard</a><a class="navitem" data-page="input" href="#input">✍️ Target &amp; Achievement</a><a class="navitem" data-page="mission" href="#mission">🎯 Today's Mission</a><a class="navitem" data-page="trajectory" href="#trajectory">📈 Weekly Trajectory</a><a class="navitem" data-page="gpt" href="#gpt">💬 Retail GPT</a><a class="navitem adminNav" data-page="admin" href="#admin">⚙ Admin Console</a><a class="navitem" data-page="rhythm" href="#rhythm">🗓 Operating Rhythm</a><div class="sidebox"><b id="missionStatus">Mission Ready</b><span id="sideScope">RM → ARM → City → Store</span><br/><br/><span>Last updated: <b id="lastUpdated" style="color:#fff;display:inline">--</b></span></div></aside>
 <main class="main"><div class="topbar"><div class="title"><h1>Retail Operations OS Enterprise</h1><p>Role-secured manager execution with separate pages and Admin/HO-only input controls.</p></div><div><div class="controls"><div class="field"><label>RM</label><select id="rm" onchange="onRMChange()"></select></div><div class="field"><label>ARM</label><select id="arm" onchange="onARMChange()"></select></div><div class="field"><label>Location / City</label><select id="city" onchange="onCityChange()"></select></div><div class="field"><label>Store</label><select id="store" onchange="if(typeof refreshV23==='function')refreshV23();else calculateOS()"></select></div></div><div style="text-align:right;margin-top:10px"><button onclick="calculateOS()">Refresh Engine</button><button class="light" onclick="loadSample()">Load Sample</button></div></div></div>
 <div class="roleStrip">
 <div>
@@ -3216,6 +3216,186 @@ const EMBEDDED_W1_ACHIEVEMENT={"aspenvizag":{"store":"Aptronix Aspen Vizag","dat
     return delegatedEmployeeLogin();
   };
   window.loginApp=window.employeeLoginApp;
+})();
+</script>
+
+
+<script>
+/* v2.4.4.7 — FINAL SINGLE AUTHENTICATION CONTROLLER
+   This is the last-defined login handler and intentionally bypasses all older
+   login wrappers. All roles use the same credential resolver and scope init. */
+(function(){
+  function authNorm(value){
+    return String(value||'').trim().toLowerCase().replace(/\s+/g,'');
+  }
+  function authError(message){
+    const box=el('employeeLoginError');
+    if(box){box.innerText=message;box.style.display='block';}
+  }
+  function authClear(){
+    const box=el('employeeLoginError');
+    if(box){box.innerText='';box.style.display='none';}
+  }
+  function setIdentityUI(){
+    if(!CURRENT_USER)return;
+    const display=CURRENT_USER.employeeName||CURRENT_USER.user;
+    if(el('greetName'))el('greetName').innerText=display;
+    if(el('loggedInUser'))el('loggedInUser').innerText=display;
+    if(el('loggedInRole'))el('loggedInRole').innerText=CURRENT_USER.role;
+    if(el('loggedInScope'))el('loggedInScope').innerText=CURRENT_USER.scopeLabel||CURRENT_USER.user;
+  }
+  function isEnterpriseRole(role){
+    return ['Admin / HO','CEO','Business Head'].includes(role);
+  }
+  function forceResolvedScope(){
+    if(!CURRENT_USER)return;
+
+    // Let the authoritative hierarchy builder create valid option lists first.
+    if(typeof configureRoleV23==='function')configureRoleV23('login');
+
+    const role=CURRENT_USER.role;
+    const user=CURRENT_USER.user;
+
+    if(isEnterpriseRole(role)){
+      ['rm','arm','city','store'].forEach(id=>{
+        const s=el(id); if(!s)return;
+        const all=[...s.options].find(o=>String(o.value).startsWith('All '));
+        if(all)s.value=all.value;
+      });
+      return;
+    }
+
+    if(role==='RM'){
+      if(el('rm'))el('rm').value=user;
+      if(typeof onRMChange==='function')onRMChange(false);
+      if(el('arm')&&[...el('arm').options].some(o=>o.value==='All ARMs'))el('arm').value='All ARMs';
+      if(el('city')&&[...el('city').options].some(o=>o.value==='All Cities'))el('city').value='All Cities';
+      if(el('store')&&[...el('store').options].some(o=>o.value==='All Stores'))el('store').value='All Stores';
+      return;
+    }
+
+    if(role==='ARM'){
+      const row=STORE_MAP.find(x=>x.arm===user);
+      if(row&&el('rm'))el('rm').value=row.rm;
+      if(el('arm'))el('arm').value=user;
+      if(typeof onARMChange==='function')onARMChange(false);
+      if(el('city')&&[...el('city').options].some(o=>o.value==='All Cities'))el('city').value='All Cities';
+      if(el('store')&&[...el('store').options].some(o=>o.value==='All Stores'))el('store').value='All Stores';
+      return;
+    }
+
+    if(role==='Store Manager'){
+      const row=STORE_MAP.find(x=>x.store===user);
+      if(row){
+        if(el('rm'))el('rm').value=row.rm;
+        if(el('arm'))el('arm').value=row.arm;
+        if(el('city'))el('city').value=row.city;
+        if(el('store'))el('store').value=row.store;
+      }
+    }
+  }
+  function finishLogin(){
+    const screen=el('loginScreen');
+    if(screen)screen.style.display='none';
+
+    document.body.classList.toggle('role-admin',CURRENT_USER?.role==='Admin / HO');
+
+    forceResolvedScope();
+
+    if(typeof applyRolePermissions==='function')applyRolePermissions();
+    if(typeof applyCleanExecutiveModeV24310==='function')applyCleanExecutiveModeV24310();
+    if(typeof configureExecutiveMode==='function')configureExecutiveMode();
+
+    if(typeof refreshV23==='function')refreshV23();
+    else if(typeof calculateOS==='function')calculateOS();
+
+    if(typeof navigateToPage==='function')navigateToPage('dashboard');
+    setIdentityUI();
+
+    // One deterministic post-render pass after all legacy page wrappers have settled.
+    setTimeout(()=>{
+      forceResolvedScope();
+      if(typeof refreshV23==='function')refreshV23();
+      setIdentityUI();
+      document.body.classList.toggle('role-admin',CURRENT_USER?.role==='Admin / HO');
+    },120);
+  }
+
+  window.employeeLoginApp=function(){
+    authClear();
+
+    const rawId=String(el('employeeLoginId')?.value||'').trim();
+    const rawPassword=String(el('employeeLoginPassword')?.value||'').trim();
+    if(!rawId||!rawPassword){
+      authError('Please enter both Employee ID and password.');
+      return false;
+    }
+
+    const upperId=rawId.toUpperCase();
+
+    // Frozen executive credentials.
+    if(upperId==='KN'||upperId==='MS'){
+      if(authNorm(rawPassword)!==authNorm(upperId)){
+        authError('Incorrect executive password.');
+        return false;
+      }
+      const role=upperId==='KN'?'Business Head':'CEO';
+      CURRENT_USER={
+        role,
+        user:role,
+        employeeId:upperId,
+        employeeName:role,
+        employeeFirstName:role,
+        jobTitle:role,
+        scopeLabel:'Enterprise · 69 Stores'
+      };
+      finishLogin();
+      return true;
+    }
+
+    const employee=EMPLOYEE_ACCESS.find(x=>String(x.employeeId)===rawId);
+    if(!employee){
+      authError('Employee ID is not authorised for Retail Operations OS access.');
+      return false;
+    }
+
+    const expected=(employee.employeeId==='3093'&&employee.role==='Admin / HO')
+      ? authNorm('admin2705')
+      : authNorm(employee.employeeId+employee.firstName);
+
+    if(authNorm(rawPassword)!==expected){
+      authError(employee.employeeId==='3093'
+        ? 'Incorrect Admin password.'
+        : 'Incorrect password. Use Employee ID followed by the first name shown in the staff master.');
+      return false;
+    }
+
+    CURRENT_USER={
+      role:employee.role,
+      user:employee.scopeUser,
+      employeeId:employee.employeeId,
+      employeeName:employee.fullName,
+      employeeFirstName:employee.firstName,
+      jobTitle:employee.jobTitle,
+      scopeLabel:employee.scopeLabel
+    };
+
+    finishLogin();
+    return true;
+  };
+
+  window.loginApp=window.employeeLoginApp;
+
+  window.logoutApp=function(){
+    CURRENT_USER=null;
+    document.body.classList.remove('role-admin','role-executive','role-ceo','role-business-head');
+    const screen=el('loginScreen');
+    if(screen)screen.style.display='grid';
+    if(el('employeeLoginId'))el('employeeLoginId').value='';
+    if(el('employeeLoginPassword'))el('employeeLoginPassword').value='';
+    authClear();
+    setTimeout(()=>el('employeeLoginId')?.focus(),50);
+  };
 })();
 </script>
 
