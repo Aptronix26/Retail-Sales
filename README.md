@@ -27,4 +27,5 @@ This is a static prototype. Its browser-side login and role controls are present
 - Centralized the reporting-period configuration and standardized core metric helpers.
 - Added formula-contract tests and a metric dictionary for auditability.
 - Added clear deployment and security guidance.
+- Added a responsive executive UI layer with clearer hierarchy, stronger navigation, improved KPI cards, polished tables, and accessible focus states.
 - Preserved the existing calculations, embedded data, navigation, and Excel workflow.
