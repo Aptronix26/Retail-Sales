@@ -33,7 +33,11 @@ for (const metric of metrics) {
 }
 assert.equal(sandbox.globalThis.PROD_DATASET_VERSION_2454, "aug2026-2026-08-21-v2455");
 assert.equal(sandbox.globalThis.PROD_META_2454.achievementRows, 69);
-assert.match(index, /daily-data\.js\?v=20260822-1/);
-assert.ok(index.indexOf("daily-data.js?v=20260822-1") < index.indexOf("CLEAN PRODUCTION AUTH + DATA BOOTSTRAP"));
+assert.match(index, /daily-data\.js\?v=20260822-2/);
+assert.ok(index.indexOf("daily-data.js?v=20260822-2") < index.indexOf("CLEAN PRODUCTION AUTH + DATA BOOTSTRAP"));
+const inlineSource = index.match(/window\.PROD_ACH_2454=(\{.*?\});\nwindow\.PROD_EMPLOYEE_ACCESS_2454=/s)?.[1];
+assert.ok(inlineSource, "inline production fallback is required");
+const inlineActuals = vm.runInNewContext("(" + inlineSource + ")");
+assert.deepEqual(JSON.parse(JSON.stringify(inlineActuals)), JSON.parse(JSON.stringify(actuals)));
 
 console.log("Daily MTD production data validated: 69 stores through 21 Aug 2026");
