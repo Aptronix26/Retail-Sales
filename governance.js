@@ -18,9 +18,9 @@
   const check = (name, state, detail, severity = "high") => ({ name, state: Boolean(state) ? "pass" : severity === "low" ? "warning" : "fail", detail });
 
   function dailyAudit() {
-    const targets = typeof EMBEDDED_TARGETS === "undefined" ? globalThis.PROD_TARGETS_2454 : EMBEDDED_TARGETS;
-    const actuals = typeof EMBEDDED_ACHIEVEMENT === "undefined" ? globalThis.PROD_ACH_2454 : EMBEDDED_ACHIEVEMENT;
-    const meta = typeof EMBEDDED_META === "undefined" ? null : EMBEDDED_META;
+    const targets = globalThis.PROD_TARGETS_2454 || (typeof EMBEDDED_TARGETS === "undefined" ? null : EMBEDDED_TARGETS);
+    const actuals = globalThis.PROD_ACH_2454 || (typeof EMBEDDED_ACHIEVEMENT === "undefined" ? null : EMBEDDED_ACHIEVEMENT);
+    const meta = globalThis.PROD_META_2454 || (typeof EMBEDDED_META === "undefined" ? null : EMBEDDED_META);
     if (!targets || !actuals) return { source: config.governance && config.governance.source, coverage: "Unavailable", dataThrough: config.reporting && config.reporting.label, checks: [check("Embedded data available", false, "Target or achievement data is unavailable.")] };
     const targetKeys = Object.keys(targets);
     const actualKeys = Object.keys(actuals);
