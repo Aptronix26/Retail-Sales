@@ -9,6 +9,12 @@ globalThis.DASHBOARD_CONFIG = Object.freeze({
     remainingPeriods: 11,
     periodUnit: "day"
   }),
+  governance: Object.freeze({
+    source: "Embedded August target and MTD achievement workbooks",
+    dataThrough: "20 Aug 2026",
+    published: "22 Aug 2026",
+    expectedStores: 69
+  }),
   benchmarks: Object.freeze({ loanAttachPct: 25, tradeInPct: 10 }),
   dataClassification: "Internal business reporting"
 });
