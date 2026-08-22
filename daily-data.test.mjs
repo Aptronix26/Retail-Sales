@@ -39,5 +39,10 @@ const inlineSource = index.match(/window\.PROD_ACH_2454=(\{.*?\});\nwindow\.PROD
 assert.ok(inlineSource, "inline production fallback is required");
 const inlineActuals = vm.runInNewContext("(" + inlineSource + ")");
 assert.deepEqual(JSON.parse(JSON.stringify(inlineActuals)), JSON.parse(JSON.stringify(actuals)));
+const embeddedSource = index.match(/const EMBEDDED_ACHIEVEMENT=(\{.*?\});\n  const EMBEDDED_META=/s)?.[1];
+assert.ok(embeddedSource, "legacy renderer embedded data is required");
+const embeddedActuals = vm.runInNewContext("(" + embeddedSource + ")");
+assert.deepEqual(JSON.parse(JSON.stringify(embeddedActuals)), JSON.parse(JSON.stringify(actuals)));
+assert.match(index, /const DATASET_VERSION='aug2026-2026-08-21-v2455'/);
 
 console.log("Daily MTD production data validated: 69 stores through 21 Aug 2026");
